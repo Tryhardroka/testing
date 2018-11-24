@@ -1,0 +1,14 @@
+const Discord = require("discord.js");
+const client = new Discord.Client();
+ 
+client.on("ready", () => {
+  console.log("I am ready!");
+});
+ 
+client.on("message", (message) => {
+  if (message.content.startsWith("owo")) {
+    message.channel.send("uwu");
+  }
+});
+ 
+client.login("https://discordapp.com/api/webhooks/515830463877873675/Zwaajd-KSwXacp68CHoLAkbpiu2f5JeKs_YK1hHKBYlDd1gl1rs88SyjrmtdMveFeDG4");
